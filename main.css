@@ -1,0 +1,140 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+body > header {
+    padding: 0 20px;
+    border-bottom: 2px solid darkblue;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photo {
+    height: 120px;
+}
+
+.info {
+    margin: 20px;
+    width: 242px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.position {
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.contacts p {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contacts img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+main > div {
+    padding: 40px 20px;
+}
+
+main header {
+    font-weight: bold;
+    color: darkblue;
+    margin: 15px 0;
+}
+
+.item-name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.item-time {
+    font-family: monospace;
+}
+
+.item-time, .item-text, .item-description {
+    font-size: 14px;
+    margin: 7px 0;
+    color: #3c3b3b;
+}
+
+footer {
+    margin-top: auto;    
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 2px solid lightseagreen;
+    color: lightseagreen;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #1b615d;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+       grid-template-columns: 1fr;
+    }
+    
+    .left-column {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .right-column {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .contacts {
+        margin-left: 0;
+    }
+
+    .contacts p {
+        justify-content: flex-start;
+    }
+    .contacts img {
+        order: -1;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .photo {
+        margin: 20px auto 0;
+    }
+    .info {
+        margin: auto;
+        text-align: center;
+    }
+}
