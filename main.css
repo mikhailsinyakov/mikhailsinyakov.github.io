@@ -7,6 +7,14 @@ body {
     height: 100vh;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: #033c38;
+}
+
 body > header {
     padding: 0 20px;
     border-bottom: 2px solid darkblue;
@@ -54,7 +62,7 @@ body > header {
 
 main {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 3fr;
 }
 
 main > div {
@@ -76,10 +84,14 @@ main header {
     font-family: monospace;
 }
 
-.item-time, .item-text, .item-description {
+.item-time, .item-text, .item-description, .item-additional-info {
     font-size: 14px;
     margin: 7px 0;
     color: #3c3b3b;
+}
+
+.item-additional-info {
+    font-style: italic;
 }
 
 footer {
@@ -92,12 +104,10 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
     color: lightseagreen;
 }
 
 footer a:hover {
-    text-decoration: underline;
     color: #1b615d;
 }
 
